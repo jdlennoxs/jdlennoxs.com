@@ -1,0 +1,9 @@
+{
+   "private": true,
+   "name": "jdlennoxs",
+   "workspaces": ["packages/*"],
+   "scripts": {
+   "client": "yarn workspace client dev"
+   }
+}
+
