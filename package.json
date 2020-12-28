@@ -1,9 +1,16 @@
 {
    "private": true,
    "name": "jdlennoxs",
-   "workspaces": ["packages/*"],
+   "workspaces": [
+      "packages/*"
+   ],
    "scripts": {
-   "client": "yarn workspace client dev"
+      "next": "yarn workspace next dev",
+      "client": "yarn workspace client start",
+      "storybook": "yarn workspace client storybook",
+      "dev": "concurrently --kill-others-on-fail \"yarn client\"  \"yarn storybook\""
+   },
+   "dependencies": {
+      "concurrently": "^5.3.0"
    }
 }
-

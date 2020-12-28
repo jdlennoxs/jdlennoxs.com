@@ -1,0 +1,5 @@
+/* ./styles/global.css */
+@import url("https://use.typekit.net/tov0boo.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
