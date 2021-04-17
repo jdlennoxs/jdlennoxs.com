@@ -3,6 +3,8 @@ import Link from 'next/link'
 import hydrate from 'next-mdx-remote/hydrate'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { getAllPostSlugs, getPostData } from '../../lib/post-service'
+import CodeBlock from '@component/code-block/index'
+import { MdxRemote } from 'next-mdx-remote/types'
 
 export default function PostPage({
     postData,
@@ -11,10 +13,12 @@ export default function PostPage({
         title: string
         date: string
         description: string
-        source: string
+        source: MdxRemote.Source
     }
 }) {
-    const content = hydrate(postData.source, { components: [] })
+    const content = hydrate(postData.source, { components: {
+        code: CodeBlock
+    } })
     return (
         <>
             <Head>

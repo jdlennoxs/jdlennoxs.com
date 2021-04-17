@@ -7,11 +7,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["stratos", "roc-grotesk", ...defaultTheme.fontFamily.sans],
-        serif: ["plantin", ...defaultTheme.fontFamily.serif],
+        sans: ["bookmania","stratos", ...defaultTheme.fontFamily.sans],
+        serif: ["chaparral-pro", "plantin", ...defaultTheme.fontFamily.serif],
         mono: [
-          "franklin-gothic-urw",
-          "source-code-pro",
+          "fira-mono",
           ...defaultTheme.fontFamily.mono,
         ],
       },

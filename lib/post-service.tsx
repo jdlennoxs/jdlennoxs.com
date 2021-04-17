@@ -3,12 +3,14 @@ import path from 'path'
 import matter from 'gray-matter'
 import renderToString from 'next-mdx-remote/render-to-string'
 import { postFilePaths, POSTS_PATH } from './mdx-utils'
+import CodeBlock from '@component/code-block/index'
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
 // to handle import statements. Instead, you must include components in scope
 // here.
 const components = {
+    code: CodeBlock
     // a: CustomLink,
     // It also works with dynamically-imported components, which is especially
     // useful for conditionally loading components for certain routes.
