@@ -34,7 +34,7 @@ const LineContent = styled.span`
     display: table-cell;
 `
 
-const CodeBlock = ({ children, className }) => {
+export const CodeBlock = ({ children, className }) => {
     const language = className ? className.replace(/language-/, '') : 'javascript'
 
     return (
@@ -58,4 +58,3 @@ const CodeBlock = ({ children, className }) => {
     )
 }
 
-export default CodeBlock
