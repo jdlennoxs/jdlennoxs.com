@@ -1,18 +1,15 @@
 // tailwind.config.js
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ["./pages/**/*.tsx", "./components/**/*.tsx"],
+  purge: ['./pages/**/*.tsx', './components/**/*.tsx'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
-        sans: ["bookmania","stratos", ...defaultTheme.fontFamily.sans],
-        serif: ["chaparral-pro", "plantin", ...defaultTheme.fontFamily.serif],
-        mono: [
-          "fira-mono",
-          ...defaultTheme.fontFamily.mono,
-        ],
+        sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+        serif: ['Crimson Text', 'EB Garamond', ...defaultTheme.fontFamily.serif],
+        mono: ['Fira Mono', ...defaultTheme.fontFamily.mono],
       },
     },
   },
@@ -20,4 +17,10 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-};
+}
+
+// #2c2c2c
+// #eb5c76
+// #226ce0
+// #efede7
+// #ffffff

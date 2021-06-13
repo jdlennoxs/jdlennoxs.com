@@ -13,9 +13,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "@component/*": ["./components/*"]
+      "@Components": ["./components/components/index"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "twin.d.ts"],

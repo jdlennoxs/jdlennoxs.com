@@ -1,5 +1,5 @@
 // .babelrc.js
 module.exports = {
-  presets: [["next/babel", { "preset-react": { runtime: "automatic" } }]],
-  plugins: ["babel-plugin-macros", ["styled-components", { ssr: true }]],
-};
+  presets: [['next/babel', { 'preset-react': { runtime: 'automatic' } }]],
+  plugins: [['babel-plugin-twin', { debug: true }], 'babel-plugin-macros', ['styled-components', { ssr: true }]],
+}
